@@ -81,6 +81,7 @@ sniffer:
       ports: [443, 8443, 2053, 2083, 2087, 2096]
     QUIC:
       ports: [443, 8443]
+
 proxies:
   - name: "🇩🇪 hamedp71-WG"
     type: wireguard
@@ -134,32 +135,6 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇮🇸 hamedp71-WG"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: ""
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "37.156.216.148"
-    port: 443
-    public-key: "0CUpqMsVggxsjvdZewCsBFsw84goCitq0G9nytQhpDw="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    dns: ["10.255.255.2"]
-    allowed-ips: ["0.0.0.0/0", "::/0"]
-    reserved: "AAAA"
-    udp: true
-    mtu: 1280
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h3: 3
-      h4: 4
-
   - name: "🇦🇹 Austria-WG"
     type: wireguard
     ip: "100.80.234.177/32"
@@ -174,32 +149,6 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h3: 3
-      h4: 4
- 
-  - name: "🇦🇹 Austria-WG-1"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: ""
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "89.187.168.67"
-    port: 443
-    public-key: "KtJIKy9zsCXtKwFMQeGDEZVXtqw+X1+5z10Rh84/N0s="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    dns: ["10.255.255.2"]
-    allowed-ips: ["0.0.0.0/0", "::/0"]
-    reserved: "AAAA"
-    udp: true
-    mtu: 1280
     dialer-proxy: ""
     amnezia-wg-option:
       jc: 4
@@ -556,32 +505,6 @@ proxies:
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "89.187.165.99"
-    port: 65142
-    public-key: "G7LkwWk08Ase/Wi9mnOW77brNBC0vTCemvy1IW1nlV4="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
-    reserved: "AAAA"
-    udp: true
-    mtu: 1280
-    dns: ["10.255.255.2", "8.8.8.8"]
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h3: 3
-      h4: 4
-
-  - name: "🇨🇭 Switzerland-WG-2"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: "2001:db8:1::1/128"
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.156.175.180"
     port: 65142
     public-key: "uFOg97vQhHVCUfZy/HwmGH+dR6/9lpeWZ5tV3PysHRE="
@@ -733,32 +656,6 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇫🇷 France-WG-2"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: "2001:db8:1::1/128"
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "84.17.42.35"
-    port: 65142
-    public-key: "cmaT8JIehfRf5PWWDkcBRwLWDb3jrIkk/SDbw4JmUAc="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
-    reserved: "AAAA"
-    udp: true
-    mtu: 1280
-    dns: ["10.255.255.2", "8.8.8.8"]
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h3: 3
-      h4: 4
-
   - name: "🇬🇧 United Kingdom-WG"
     type: wireguard
     ip: "100.80.234.177/32"
@@ -799,6 +696,32 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
+
+  - name: "🇮🇸 hamedp71-WG"
+    type: wireguard
+    ip: "100.80.234.177/32"
+    ipv6: ""
+    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
+    server: "37.156.216.148"
+    port: 443
+    public-key: "0CUpqMsVggxsjvdZewCsBFsw84goCitq0G9nytQhpDw="
+    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
+    dns: ["10.255.255.2"]
+    allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
     dialer-proxy: ""
     amnezia-wg-option:
       jc: 4
@@ -1940,9 +1863,7 @@ proxy-groups:
       - "🤍 وارپ"
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
-      - "🇮🇸 hamedp71-WG"
       - "🇦🇹 Austria-WG"
-      - "🇦🇹 Austria-WG-1"
       - "🇦🇺 Australia-WG-1"
       - "🇦🇺 Australia-WG-2"
       - "🇦🇺 Australia-WG-3"
@@ -1957,15 +1878,14 @@ proxy-groups:
       - "🇨🇦 Canada-WG-3"
       - "🇨🇦 Canada-WG-4"
       - "🇨🇭 Switzerland-WG-1"
-      - "🇨🇭 Switzerland-WG-2"
       - "🇨🇾 Cyprus-WG"
       - "🇨🇿 Czechia-WG"
       - "🇨🇿 Czechia-WG-1"
       - "🇫🇷 France-WG"
       - "🇫🇷 France-WG-1"
-      - "🇫🇷 France-WG-2"
       - "🇬🇧 United Kingdom-WG"
       - "🇭🇰 Hong Kong-WG"
+      - "🇮🇸 hamedp71-WG"
       - "🇮🇸 Iceland-WG"
       - "🇮🇸 Iceland-WG-1"
       - "🇮🇸 Iceland-WG-2"
@@ -2020,7 +1940,6 @@ proxy-groups:
       - "🇩🇪 hamedp71-WG 2"
       - "🇮🇸 hamedp71-WG"
       - "🇦🇹 Austria-WG"
-      - "🇦🇹 Austria-WG-1"
       - "🇦🇺 Australia-WG-1"
       - "🇦🇺 Australia-WG-2"
       - "🇦🇺 Australia-WG-3"
@@ -2035,13 +1954,11 @@ proxy-groups:
       - "🇨🇦 Canada-WG-3"
       - "🇨🇦 Canada-WG-4"
       - "🇨🇭 Switzerland-WG-1"
-      - "🇨🇭 Switzerland-WG-2"
       - "🇨🇾 Cyprus-WG"
       - "🇨🇿 Czechia-WG"
       - "🇨🇿 Czechia-WG-1"
       - "🇫🇷 France-WG"
       - "🇫🇷 France-WG-1"
-      - "🇫🇷 France-WG-2"
       - "🇬🇧 United Kingdom-WG"
       - "🇭🇰 Hong Kong-WG"
       - "🇮🇸 Iceland-WG"
