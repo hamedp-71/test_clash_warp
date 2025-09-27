@@ -160,32 +160,6 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇹🇷 hamedp71 - Warp"
-    type: wireguard
-    ip: 10.201.2.124/32
-    private-key: "gCQsj/7vZrBCjLuKtNvCrwhEa0CqSXRWRHvoddNin38="
-    server: tr01a.kcufwfgnkr.net
-    port: 62931
-    public-key: "6T9PkVHfTvMfDtKANISJqnW1Ulmd5kYyh8IsVkQYemU="
-    pre-shared-key: "ZMNacbDp5sZhDlKLX0iGhcn+7zRno1gMPmx1ZU3JeWU="
-    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
-    reserved: [251, 19, 4]
-    persistent-keepalive: 15
-    mtu: 1280
-    dns: ["10.255.255.2", "8.8.8.8"]
-    udp: true
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 43
-      jmin: 50
-      jmax: 70
-      s1: 110
-      s2: 120
-      h1: 1593635057
-      h2: 430880481
-      h3: 1214405368
-      h4: 1739253821
-
   - name: "🇦🇹 Austria-WG"
     type: wireguard
     ip: "100.80.234.177/32"
@@ -1967,7 +1941,6 @@ proxy-groups:
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
       - "🇮🇸 hamedp71-WG"
-      - "🇹🇷 hamedp71 - Warp"
       - "🇦🇹 Austria-WG"
       - "🇦🇹 Austria-WG-1"
       - "🇦🇺 Australia-WG-1"
@@ -2046,7 +2019,6 @@ proxy-groups:
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
       - "🇮🇸 hamedp71-WG"
-      - "🇹🇷 hamedp71 - Warp"
       - "🇦🇹 Austria-WG"
       - "🇦🇹 Austria-WG-1"
       - "🇦🇺 Australia-WG-1"
