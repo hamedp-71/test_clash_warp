@@ -427,58 +427,6 @@ proxies:
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "198.8.92.100"
-    port: 65142
-    public-key: "YxWQDjNmU41PJXtoobFek3Y6nhICSLgsqH+QKPO5AQ8="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
-    reserved: "AAAA"
-    udp: true
-    mtu: 1280
-    dns: ["10.255.255.2", "8.8.8.8"]
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h3: 3
-      h4: 4
-
-  - name: "🇨🇦 Canada-WG-3"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: "2001:db8:1::1/128"
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "149.57.28.226"
-    port: 65142
-    public-key: "vwimooPysZvNdJULeFQVovYfqhsLG5gVdzgoTnfm+iE="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
-    reserved: "AAAA"
-    udp: true
-    mtu: 1280
-    dns: ["10.255.255.2", "8.8.8.8"]
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h3: 3
-      h4: 4
-
-  - name: "🇨🇦 Canada-WG-4"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: "2001:db8:1::1/128"
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "104.244.210.244"
     port: 65142
     public-key: "IMHoX/bhNghQVQB0pYKi14pwJhkOcLevpiMa7Khaz2I="
@@ -1603,7 +1551,6 @@ proxy-groups:
       - "🤍 وارپ"
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
-      - "🇮🇸 hamedp71-WG"
       - "🇦🇹 Austria-WG"
       - "🇦🇺 Australia-WG-1"
       - "🇦🇺 Australia-WG-2"
@@ -1615,9 +1562,7 @@ proxy-groups:
       - "🇧🇦 Bosnia-WG"
       - "🇨🇦 Canada-WG"
       - "🇨🇦 Canada-WG-1"
-      - "🇨🇦 Canada-WG-3"
-      - "🇨🇦 Canada-WG-3"
-      - "🇨🇦 Canada-WG-4"
+      - "🇨🇦 Canada-WG-2"
       - "🇨🇭 Switzerland-WG-1"
       - "🇨🇾 Cyprus-WG"
       - "🇨🇿 Czechia-WG"
@@ -1669,7 +1614,6 @@ proxy-groups:
     proxies:
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
-      - "🇮🇸 hamedp71-WG"
       - "🇦🇹 Austria-WG"
       - "🇦🇺 Australia-WG-1"
       - "🇦🇺 Australia-WG-2"
@@ -1681,9 +1625,7 @@ proxy-groups:
       - "🇧🇦 Bosnia-WG"
       - "🇨🇦 Canada-WG"
       - "🇨🇦 Canada-WG-1"
-      - "🇨🇦 Canada-WG-3"
-      - "🇨🇦 Canada-WG-3"
-      - "🇨🇦 Canada-WG-4"
+      - "🇨🇦 Canada-WG-2"
       - "🇨🇭 Switzerland-WG-1"
       - "🇨🇾 Cyprus-WG"
       - "🇨🇿 Czechia-WG"
