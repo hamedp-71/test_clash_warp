@@ -53,9 +53,15 @@ dns:
     - '2001:4860:4860::8844'
     - '1.1.1.1'
     - '2606:4700:4700::1111'
+  enhanced-mode: fake-ip
+  fake-ip-range: '198.18.0.1/16'
+  fake-ip-filter:
+    - '*'
+    - '+.lan'
+    - '+.local'
 tun:
   enable: true
-  stack: mixed
+  stack: gvisor
   auto-route: true
   strict-route: true
   auto-detect-interface: true
@@ -1953,8 +1959,8 @@ proxy-groups:
   - name: "🤍 وارپ"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
-    interval: 60
-    tolerance: 90
+    interval: 120
+    tolerance: 30
     proxies:
       - "🇹🇷 hamedp71 - Warp"
       - "🇦🇹 Austria-WG"
@@ -2027,48 +2033,6 @@ proxy-groups:
       - "🇿🇦 South Africa"
       
 rule-providers:
-  malware:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt"
-    path: "./ruleset/malware.txt"
-    interval: 86400
-  malware-cidr:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware-ip.txt"
-    path: "./ruleset/malware-cidr.txt"
-    interval: 86400
-  phishing:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt"
-    path: "./ruleset/phishing.txt"
-    interval: 86400
-  phishing-cidr:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing-ip.txt"
-    path: "./ruleset/phishing-cidr.txt"
-    interval: 86400
-  cryptominers:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt"
-    path: "./ruleset/cryptominers.txt"
-    interval: 86400
-  category-ads-all:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/category-ads-all.txt"
-    path: "./ruleset/category-ads-all.txt"
-    interval: 86400
   ir:
     type: http
     format: text
@@ -2085,12 +2049,6 @@ rule-providers:
     interval: 86400
 
 rules:
-  - RULE-SET,malware,REJECT
-  - RULE-SET,phishing,REJECT
-  - RULE-SET,cryptominers,REJECT
-  - RULE-SET,category-ads-all,REJECT
-  - RULE-SET,malware-cidr,REJECT
-  - RULE-SET,phishing-cidr,REJECT
   - RULE-SET,ir,DIRECT
   - RULE-SET,ir-cidr,DIRECT
   - MATCH,💚خانه
