@@ -1055,32 +1055,6 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇵🇱 Poland-WG"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: "2001:db8:1::1/128"
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "84.17.55.99"
-    port: 65142
-    public-key: "MYoOwWssF5fWZ+bOQINzfitdjwyqiHcJhr607wSAzEY="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
-    reserved: "AAAA"
-    udp: true
-    mtu: 1280
-    dns: ["10.255.255.2", "8.8.8.8"]
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h3: 3
-      h4: 4
-
   - name: "🇷🇺 Russia-WG"
     type: wireguard
     ip: "100.80.234.177/32"
@@ -1622,7 +1596,6 @@ proxy-groups:
       - "🇳🇴 Norway-WG"
       - "🇳🇿 New Zealand-WG"
       - "🇵🇦 Panama-WG"
-      - "🇵🇱 Poland-WG"
       - "🇷🇺 Russia-WG"
       - "🇷🇺 Russia-WG-1"
       - "🇷🇺 Russia-WG-2"
@@ -1687,7 +1660,6 @@ proxy-groups:
       - "🇳🇴 Norway-WG"
       - "🇳🇿 New Zealand-WG"
       - "🇵🇦 Panama-WG"
-      - "🇵🇱 Poland-WG"
       - "🇷🇺 Russia-WG"
       - "🇷🇺 Russia-WG-1"
       - "🇷🇺 Russia-WG-2"
