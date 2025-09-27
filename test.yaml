@@ -83,6 +83,15 @@ sniffer:
       ports: [443, 8443]
 
 proxies:
+  - name: "🇩🇪 anytls-443"
+    type: anytls
+    server: 80.240.26.147
+    port: 443
+    password: "qzJvszJHOB"
+    tls: true
+    sni: "suiany.makingirangreatagain.com"
+    servername: "suiany.makingirangreatagain.com"
+
   - name: "🇩🇪 hamedp71-WG"
     type: wireguard
     ip: "100.80.234.177/32"
@@ -1575,6 +1584,7 @@ proxy-groups:
     type: select
     proxies: 
       - "🤍 وارپ"
+      - "🇩🇪 anytls-443"
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
       - "🇦🇹 Austria-WG"
@@ -1639,6 +1649,7 @@ proxy-groups:
     interval: 120
     tolerance: 30
     proxies:
+      - "🇩🇪 anytls-443"
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
       - "🇦🇹 Austria-WG"
