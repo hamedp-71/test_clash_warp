@@ -134,32 +134,6 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇩🇪 hamedp71-WG 3"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: ""
-    private-key: "AE4edmSM5TdxUEbAFzjHtZ/vK5fnsjFA9upagIxdEXE="
-    server: "138.199.22.163"
-    port: 443
-    public-key: "8n68GM7n6dm6Hj3RIIh5q1q6Un52Cq82LYEXHRAtPg4="
-    pre-shared-key: "+3VbD/nOCjChVYh3wiW2iPaJp7Tl2ceBc/wtnYg46oQ="
-    dns: ["10.255.255.2"]
-    allowed-ips: ["0.0.0.0/0", "::/0"]
-    reserved: "AAAA"
-    udp: true
-    mtu: 1280
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h3: 3
-      h4: 4
-
   - name: "🇮🇸 hamedp71-WG"
     type: wireguard
     ip: "100.80.234.177/32"
@@ -1992,7 +1966,6 @@ proxy-groups:
       - "🤍 وارپ"
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
-      - "🇩🇪 hamedp71-WG 3"
       - "🇮🇸 hamedp71-WG"
       - "🇹🇷 hamedp71 - Warp"
       - "🇦🇹 Austria-WG"
@@ -2072,7 +2045,6 @@ proxy-groups:
     proxies:
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
-      - "🇩🇪 hamedp71-WG 3"
       - "🇮🇸 hamedp71-WG"
       - "🇹🇷 hamedp71 - Warp"
       - "🇦🇹 Austria-WG"
