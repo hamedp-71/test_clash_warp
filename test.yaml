@@ -82,6 +82,110 @@ sniffer:
     QUIC:
       ports: [443, 8443]
 proxies:
+  - name: "🇩🇪 hamedp71-WG"
+    type: wireguard
+    ip: "100.80.234.177/32"
+    ipv6: ""
+    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
+    server: "94.242.50.185"
+    port: 443
+    public-key: "Yom91OWyt0otz1S4hgQMhp1q1y8tpDvUWwVkNXpmpjc="
+    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
+    dns: ["10.255.255.2"]
+    allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
+
+  - name: "🇩🇪 hamedp71-WG 2"
+    type: wireguard
+    ip: "100.80.234.177/32"
+    ipv6: ""
+    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
+    server: "185.189.163.176"
+    port: 443
+    public-key: "dAAkV3G3YFurH3+3198clav9vlh4FxB1asqNc0tLeCk="
+    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
+    dns: ["10.255.255.2"]
+    allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
+
+  - name: "🇩🇪 hamedp71-WG 3"
+    type: wireguard
+    ip: "100.80.234.177/32"
+    ipv6: ""
+    private-key: "AE4edmSM5TdxUEbAFzjHtZ/vK5fnsjFA9upagIxdEXE="
+    server: "138.199.22.163"
+    port: 443
+    public-key: "8n68GM7n6dm6Hj3RIIh5q1q6Un52Cq82LYEXHRAtPg4="
+    pre-shared-key: "+3VbD/nOCjChVYh3wiW2iPaJp7Tl2ceBc/wtnYg46oQ="
+    dns: ["10.255.255.2"]
+    allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
+
+  - name: "🇮🇸 hamedp71-WG"
+    type: wireguard
+    ip: "100.80.234.177/32"
+    ipv6: ""
+    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
+    server: "37.156.216.148"
+    port: 443
+    public-key: "0CUpqMsVggxsjvdZewCsBFsw84goCitq0G9nytQhpDw="
+    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
+    dns: ["10.255.255.2"]
+    allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
+
   - name: "🇹🇷 hamedp71 - Warp"
     type: wireguard
     ip: 10.201.2.124/32
@@ -1886,6 +1990,10 @@ proxy-groups:
     type: select
     proxies: 
       - "🤍 وارپ"
+      - "🇩🇪 hamedp71-WG"
+      - "🇩🇪 hamedp71-WG 2"
+      - "🇩🇪 hamedp71-WG 3"
+      - "🇮🇸 hamedp71-WG"
       - "🇹🇷 hamedp71 - Warp"
       - "🇦🇹 Austria-WG"
       - "🇦🇹 Austria-WG-1"
@@ -1962,6 +2070,10 @@ proxy-groups:
     interval: 120
     tolerance: 30
     proxies:
+      - "🇩🇪 hamedp71-WG"
+      - "🇩🇪 hamedp71-WG 2"
+      - "🇩🇪 hamedp71-WG 3"
+      - "🇮🇸 hamedp71-WG"
       - "🇹🇷 hamedp71 - Warp"
       - "🇦🇹 Austria-WG"
       - "🇦🇹 Austria-WG-1"
