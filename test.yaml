@@ -3,9 +3,10 @@ ipv6: true
 allow-lan: true
 mode: rule
 log-level: info
-disable-keep-alive: false
-keep-alive-idle: 10
-keep-alive-interval: 15
+keepalive: 25
+disable-keep-alive: true
+keep-alive-idle: 30
+keep-alive-interval: 30
 unified-delay: false
 geo-auto-update: true
 geo-update-interval: 168
@@ -18,56 +19,49 @@ external-controller-cors:
 profile:
   store-selected: true
   store-fake-ip: true
+hosts: {}
 dns:
   enable: true
-  listen: '0.0.0.0:1053'
+  listen: 0.0.0.0:1053
   ipv6: true
   respect-rules: true
+  use-hosts: true
   use-system-hosts: false
   nameserver:
-    - 'https://8.8.8.8/dns-query#💚خانه'
+    - '223.5.5.5'
+    - '2400:3200::1'
+    - '77.88.8.8'
+    - '2a02:6b8::feed:0ff'
+    - '9.9.9.9'
+    - '2620:fe::fe'
+    - '8.8.8.8'
     - '2001:4860:4860::8888'
+    - '8.8.4.4'
+    - '2001:4860:4860::8844'
+    - '1.1.1.1'
+    - '2606:4700:4700::1111'
   proxy-server-nameserver:
-    - '8.8.8.8#DIRECT'
-    - '8.8.4.4#DIRECT'
-    - '1.1.1.1#DIRECT'
+    - '223.5.5.5'
+    - '2400:3200::1'
+    - '77.88.8.8'
+    - '2a02:6b8::feed:0ff'
+    - '9.9.9.9'
+    - '2620:fe::fe'
+    - '8.8.8.8'
     - '2001:4860:4860::8888'
-  nameserver-policy:
-    raw.githubusercontent.com: '8.8.8.8#DIRECT'
-    time.apple.com: '8.8.8.8#DIRECT'
-    'rule-set:ir': '8.8.8.8#DIRECT'
-    'rule-set:openai': '78.157.42.100#DIRECT'
-    'rule-set:microsoft': '78.157.42.100#DIRECT'
-    'rule-set:oracle': '78.157.42.100#DIRECT'
-    'rule-set:docker': '78.157.42.100#DIRECT'
-    'rule-set:adobe': '78.157.42.100#DIRECT'
-    'rule-set:epicgames': '78.157.42.100#DIRECT'
-    'rule-set:intel': '78.157.42.100#DIRECT'
-    'rule-set:amd': '78.157.42.100#DIRECT'
-    'rule-set:nvidia': '78.157.42.100#DIRECT'
-    'rule-set:asus': '78.157.42.100#DIRECT'
-    'rule-set:hp': '78.157.42.100#DIRECT'
-    'rule-set:lenovo': '78.157.42.100#DIRECT'
-  hosts:
-    'rule-set:malware': '127.0.0.1'
-    'rule-set:phishing': '127.0.0.1'
-    'rule-set:cryptominers': '127.0.0.1'
-    'rule-set:category-ads-all': '127.0.0.1'
-  enhanced-mode: fake-ip
-  fake-ip-range: '198.18.0.1/16'
-  fake-ip-filter:
-    - '*'
-    - '+.lan'
-    - '+.local'
+    - '8.8.4.4'
+    - '2001:4860:4860::8844'
+    - '1.1.1.1'
+    - '2606:4700:4700::1111'
 tun:
   enable: true
-  stack: gvisor
+  stack: mixed
   auto-route: true
   strict-route: true
   auto-detect-interface: true
   dns-hijack:
-    - 'tcp://any:53'
-    - 'udp://any:53'
+  - 'tcp://any:53'
+  - 'udp://any:53'
   mtu: 1280
 sniffer:
   enable: true
@@ -1886,7 +1880,75 @@ proxy-groups:
     type: select
     proxies: 
       - "🤍 وارپ"
-
+      - "🇹🇷 hamedp71 - Warp"
+      - "🇦🇹 Austria-WG"
+      - "🇦🇹 Austria-WG-1"
+      - "🇦🇺 Australia-WG-1"
+      - "🇦🇺 Australia-WG-2"
+      - "🇦🇺 Australia-WG-3"
+      - "🇦🇺 Australia-WG-4"
+      - "🇦🇺 Australia-WG-5"
+      - "🇦🇺 Australia-WG"
+      - "🇦🇺 Australia-WG-6"
+      - "🇧🇦 Bosnia-WG"
+      - "🇨🇦 Canada-WG"
+      - "🇨🇦 Canada-WG-1"
+      - "🇨🇦 Canada-WG-3"
+      - "🇨🇦 Canada-WG-3"
+      - "🇨🇦 Canada-WG-4"
+      - "🇨🇭 Switzerland-WG-1"
+      - "🇨🇭 Switzerland-WG-2"
+      - "🇨🇾 Cyprus-WG"
+      - "🇨🇿 Czechia-WG"
+      - "🇨🇿 Czechia-WG-1"
+      - "🇫🇷 France-WG"
+      - "🇫🇷 France-WG-1"
+      - "🇫🇷 France-WG-2"
+      - "🇬🇧 United Kingdom-WG"
+      - "🇭🇰 Hong Kong-WG"
+      - "🇮🇸 Iceland-WG"
+      - "🇮🇸 Iceland-WG-1"
+      - "🇮🇸 Iceland-WG-2"
+      - "🇮🇹 Italy-WG"
+      - "🇯🇵 Japan-WG"
+      - "🇰🇪 Kenya-WG"
+      - "🇱🇹 Lithuania-WG"
+      - "🇱🇹 Lithuania-WG-1"
+      - "🇱🇺 Luxembourg-WG"
+      - "🇲🇰 North Macedonia-WG"
+      - "🇳🇱 Netherlands-WG-1"
+      - "🇳🇱 Netherlands-WG-2"
+      - "🇳🇱 Netherlands-WG-3"
+      - "🇳🇴 Norway-WG"
+      - "🇳🇿 New Zealand-WG"
+      - "🇵🇦 Panama-WG"
+      - "🇵🇱 Poland-WG"
+      - "🇷🇺 Russia-WG"
+      - "🇷🇺 Russia-WG-1"
+      - "🇷🇺 Russia-WG-2"
+      - "🇷🇺 Russia-WG-3"
+      - "🇸🇪 Sweden-WG"
+      - "🇸🇪 Sweden-WG-1"
+      - "🇸🇪 Sweden-WG-2"
+      - "🇺🇦 Ukraine"
+      - "🇹🇼 Taiwan"
+      - "🇸🇬 Singapore"
+      - "🇸🇬 Singapore 1"
+      - "🇸🇬 Singapore 2"
+      - "🇺🇸 United States 2"
+      - "🇺🇸 United States 3"
+      - "🇺🇸 United States 4"
+      - "🇺🇸 United States 5"
+      - "🇺🇸 United States 6"
+      - "🇺🇸 United States 7"
+      - "🇺🇸 United States 8"
+      - "🇺🇸 United States 9"
+      - "🇺🇸 United States 10"
+      - "🇺🇸 United States 11"
+      - "🇺🇸 United States"
+      - "🇻🇳 Vietnam"
+      - "🇿🇦 South Africa 1"
+      - "🇿🇦 South Africa"
 
   - name: "🤍 وارپ"
     type: url-test
@@ -2021,90 +2083,6 @@ rule-providers:
     url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt"
     path: "./ruleset/ir-cidr.txt"
     interval: 86400
-  openai:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/openai.txt"
-    path: "./ruleset/openai.txt"
-    interval: 86400
-  microsoft:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/microsoft.txt"
-    path: "./ruleset/microsoft.txt"
-    interval: 86400
-  oracle:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/oracle.txt"
-    path: "./ruleset/oracle.txt"
-    interval: 86400
-  docker:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/docker.txt"
-    path: "./ruleset/docker.txt"
-    interval: 86400
-  adobe:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/adobe.txt"
-    path: "./ruleset/adobe.txt"
-    interval: 86400
-  epicgames:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/epicgames.txt"
-    path: "./ruleset/epicgames.txt"
-    interval: 86400
-  intel:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/intel.txt"
-    path: "./ruleset/intel.txt"
-    interval: 86400
-  amd:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/amd.txt"
-    path: "./ruleset/amd.txt"
-    interval: 86400
-  nvidia:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/nvidia.txt"
-    path: "./ruleset/nvidia.txt"
-    interval: 86400
-  asus:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/asus.txt"
-    path: "./ruleset/asus.txt"
-    interval: 86400
-  hp:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/hp.txt"
-    path: "./ruleset/hp.txt"
-    interval: 86400
-  lenovo:
-    type: http
-    format: text
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/lenovo.txt"
-    path: "./ruleset/lenovo.txt"
-    interval: 86400   
 
 rules:
   - RULE-SET,malware,REJECT
@@ -2115,18 +2093,6 @@ rules:
   - RULE-SET,phishing-cidr,REJECT
   - RULE-SET,ir,DIRECT
   - RULE-SET,ir-cidr,DIRECT
-  - RULE-SET,openai,DIRECT
-  - RULE-SET,microsoft,DIRECT
-  - RULE-SET,oracle,DIRECT
-  - RULE-SET,docker,DIRECT
-  - RULE-SET,adobe,DIRECT
-  - RULE-SET,epicgames,DIRECT
-  - RULE-SET,intel,DIRECT
-  - RULE-SET,amd,DIRECT
-  - RULE-SET,nvidia,DIRECT
-  - RULE-SET,asus,DIRECT
-  - RULE-SET,hp,DIRECT
-  - RULE-SET,lenovo,DIRECT
   - MATCH,💚خانه
 
 ntp:
