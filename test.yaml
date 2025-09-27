@@ -1952,7 +1952,7 @@ proxy-groups:
 
   - name: "🤍 وارپ"
     type: url-test
-    url: "http://cp.cloudflare.com"
+    url: "http://www.gstatic.com/generate_204"
     interval: 60
     tolerance: 90
     proxies:
