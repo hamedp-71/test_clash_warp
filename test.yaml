@@ -1549,7 +1549,6 @@ proxy-groups:
     interval: 120
     tolerance: 50
     proxies:
-      - "🇩🇪 anytls-443"
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
       - "🇦🇹 Austria-WG"
