@@ -32,8 +32,6 @@ dns:
   use-hosts: true
   use-system-hosts: false
   nameserver:
-    - 'https://dns.google/dns-query' # DNS اصلی برای ترافیک بین‌الملل
-    - 'https://1.1.1.1/dns-query'
     - '223.5.5.5'
     - '2400:3200::1'
     - '77.88.8.8'
@@ -46,9 +44,9 @@ dns:
     - '2001:4860:4860::8844'
     - '1.1.1.1'
     - '2606:4700:4700::1111'
-  proxy-server-nameserver:
-    - 'https://dns.google/dns-query' # DNS اصلی برای ترافیک بین‌الملل
+    - 'https://8.8.8.8/dns-query' # DNS اصلی برای ترافیک بین‌الملل
     - 'https://1.1.1.1/dns-query'
+  proxy-server-nameserver:
     - '223.5.5.5'
     - '2400:3200::1'
     - '77.88.8.8'
@@ -60,11 +58,6 @@ dns:
     - '8.8.4.4'
     - '2001:4860:4860::8844'
     - '1.1.1.1'
-  fallback:
-    - 'https://dns.cloudflare.com/dns-query' # DNS پشتیبان
-  # به کلش می‌گوید برای دامنه‌های ایرانی از DNS ایرانی (شکن) استفاده کند
-  nameserver-policy:
-  rule-set:ir: [ '178.22.122.100', '185.51.200.2' ]
     
 tun:
   enable: true
