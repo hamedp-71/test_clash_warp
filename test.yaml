@@ -28,6 +28,8 @@ dns:
   use-hosts: true
   use-system-hosts: false
   nameserver:
+    - 'https://dns.google/dns-query' # DNS اصلی برای ترافیک بین‌الملل
+    - 'https://1.1.1.1/dns-query'
     - '223.5.5.5'
     - '2400:3200::1'
     - '77.88.8.8'
@@ -41,6 +43,8 @@ dns:
     - '1.1.1.1'
     - '2606:4700:4700::1111'
   proxy-server-nameserver:
+    - 'https://dns.google/dns-query' # DNS اصلی برای ترافیک بین‌الملل
+    - 'https://1.1.1.1/dns-query'
     - '223.5.5.5'
     - '2400:3200::1'
     - '77.88.8.8'
@@ -52,6 +56,12 @@ dns:
     - '8.8.4.4'
     - '2001:4860:4860::8844'
     - '1.1.1.1'
+  fallback:
+    - 'https://dns.cloudflare.com/dns-query' # DNS پشتیبان
+  # به کلش می‌گوید برای دامنه‌های ایرانی از DNS ایرانی (شکن) استفاده کند
+  nameserver-policy:
+  rule-set:ir: [ '178.22.122.100', '185.51.200.2' ]
+    
 tun:
   enable: true
   stack: gvisor
@@ -770,32 +780,6 @@ proxies:
     server: "185.165.170.3"
     port: 65142
     public-key: "ua7TUXkcSiiHeTyCok5b3PX9DkJ4l5yVvGlSmJ34WU8="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
-    reserved: "AAAA"
-    udp: true
-    mtu: 1280
-    dns: ["10.255.255.2", "8.8.8.8"]
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h3: 3
-      h4: 4
-
-  - name: "🇯🇵 Japan-WG"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: "2001:db8:1::1/128"
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "138.199.22.163"
-    port: 65142
-    public-key: "8n68GM7n6dm6Hj3RIIh5q1q6Un52Cq82LYEXHRAtPg4="
     pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
     reserved: "AAAA"
@@ -1553,12 +1537,13 @@ proxy-groups:
       - "🤍 وارپ"
       - "🔁 (اتصال پایدار)"
       - "🇩🇪 anytls-443"
+      - DIRECT
     
   - name: "🤍 وارپ"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 120
-    tolerance: 30
+    tolerance: 50
     proxies:
       - "🇩🇪 anytls-443"
       - "🇩🇪 hamedp71-WG"
@@ -1588,7 +1573,6 @@ proxy-groups:
       - "🇮🇸 Iceland-WG"
       - "🇮🇸 Iceland-WG-1"
       - "🇮🇸 Iceland-WG-2"
-      - "🇯🇵 Japan-WG"
       - "🇰🇪 Kenya-WG"
       - "🇱🇹 Lithuania-WG"
       - "🇱🇺 Luxembourg-WG"
@@ -1619,10 +1603,9 @@ proxy-groups:
       - "🇿🇦 South Africa"
 
   - name: "🔁 (اتصال پایدار)"
-    type: fallback
+    type: fall-back
     url: "http://www.gstatic.com/generate_204"
     interval: 300
-    tolerance: 80
     proxies:
       - "🇩🇪 hamedp71-WG"
       - "🇩🇪 hamedp71-WG 2"
@@ -1651,7 +1634,6 @@ proxy-groups:
       - "🇮🇸 Iceland-WG"
       - "🇮🇸 Iceland-WG-1"
       - "🇮🇸 Iceland-WG-2"
-      - "🇯🇵 Japan-WG"
       - "🇰🇪 Kenya-WG"
       - "🇱🇹 Lithuania-WG"
       - "🇱🇺 Luxembourg-WG"
@@ -1720,7 +1702,6 @@ rules:
   - RULE-SET,ir,DIRECT
   - RULE-SET,ir-cidr,DIRECT
   - GEOIP,IR,DIRECT
-
   # قانون نهایی: هر ترافیک دیگری از گروه اصلی عبور کند
   - MATCH,💚خانه
 
