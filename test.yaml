@@ -1607,7 +1607,7 @@ proxy-groups:
       - "🇿🇦 South Africa"
 
   - name: "🔁 (اتصال پایدار)"
-    type: fall-back
+    type: fallback
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     proxies:
