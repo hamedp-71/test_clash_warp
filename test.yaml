@@ -10,9 +10,13 @@ keep-alive-interval: 30
 unified-delay: false
 geo-auto-update: true
 geo-update-interval: 168
-external-controller: '127.0.0.1:9090'
-external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
+external-controller: '0.0.0.0:9090'
+# یک رمز عبور قوی برای امنیت بیشتر اینجا قرار دهید
+secret: 'Hpp@19921992'
 external-ui: ui
+# این یک داشبورد جایگزین و محبوب به نام Yacd است که می‌توانید امتحان کنید
+# external-ui-url: 'https://github.com/haishanh/yacd/archive/gh-pages.zip'
+external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 external-controller-cors:
   allow-origins: ['*']
   allow-private-network: true
