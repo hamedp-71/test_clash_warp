@@ -48,11 +48,11 @@ dns:
   geoip: true
   geoip-code: IR
   ipcidr:
-    - 240.0.0.0/4
+    - '240.0.0.0/4'
   geosite:
-    - cn
+    - 'cn'
   domain:
-    - +.ir
+    - '+.ir'
 
 tun:
   enable: true
@@ -63,7 +63,7 @@ tun:
   dns-hijack:
   - 'tcp://any:53'
   - 'udp://any:53'
-  mtu: 1280
+  mtu: 1330
 sniffer:
   enable: true
   force-dns-mapping: true
@@ -104,9 +104,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
-      jmin: 20
-      jmax: 50
+      jc: 4
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -131,9 +131,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
-      jmin: 20
-      jmax: 50
+      jc: 4
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -158,9 +158,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
-      jmin: 20
-      jmax: 50
+      jc: 4
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -213,7 +213,7 @@ proxies:
     amnezia-wg-option:
       jc: 4
       jmin: 40
-      jmax: 70
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -239,7 +239,7 @@ proxies:
     amnezia-wg-option:
       jc: 4
       jmin: 40
-      jmax: 70
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -265,7 +265,7 @@ proxies:
     amnezia-wg-option:
       jc: 4
       jmin: 40
-      jmax: 70
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -291,7 +291,7 @@ proxies:
     amnezia-wg-option:
       jc: 4
       jmin: 40
-      jmax: 70
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -317,7 +317,7 @@ proxies:
     amnezia-wg-option:
       jc: 4
       jmin: 40
-      jmax: 70
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -343,7 +343,7 @@ proxies:
     amnezia-wg-option:
       jc: 4
       jmin: 40
-      jmax: 70
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -369,7 +369,7 @@ proxies:
     amnezia-wg-option:
       jc: 4
       jmin: 40
-      jmax: 70
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
