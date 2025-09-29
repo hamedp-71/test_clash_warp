@@ -4,7 +4,6 @@ allow-lan: true
 mode: rule
 log-level: info
 keepalive: 25
-disable-keep-alive: true
 keep-alive-idle: 30
 keep-alive-interval: 30
 unified-delay: false
@@ -63,7 +62,6 @@ dns:
     - cn
   domain:
     - +.ir
-
 tun:
   enable: true
   stack: gvisor
@@ -97,9 +95,9 @@ proxies:
     sni: "suiany.makingirangreatagain.com"
     servername: "suiany.makingirangreatagain.com"
 
-  - name: "🇩🇪 hamedp71-WG"
+  - name: "🇩🇪 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "94.242.50.185"
@@ -124,9 +122,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇩🇪 hamedp71-WG 2"
+  - name: "🇩🇪 hamedp71 2"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.189.163.176"
@@ -151,9 +149,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇦🇹 Austria-WG"
+  - name: "🇦🇹 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "89.187.168.67"
@@ -178,9 +176,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇦🇺 Australia-WG-1"
+  - name: "🇦🇺 hamedp71-1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "103.1.213.212"
@@ -205,9 +203,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇦🇺 Australia-WG-2"
+  - name: "🇦🇺 hamedp71-2"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "103.77.234.212"
@@ -232,9 +230,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇦🇺 Australia-WG-3"
+  - name: "🇦🇺 hamedp71-3"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "103.77.232.76"
@@ -259,10 +257,9 @@ proxies:
       h3: 3
       h4: 4
 
-
-  - name: "🇦🇺 Australia-WG-4"
+  - name: "🇦🇺 hamedp71-4"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "103.108.95.228"
@@ -287,9 +284,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇦🇺 Australia-WG-5"
+  - name: "🇦🇺 hamedp71-5"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "116.206.228.180"
@@ -314,9 +311,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇦🇺 Australia-WG"
+  - name: "🇦🇺 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "116.90.72.244"
@@ -341,9 +338,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇦🇺 Australia-WG-6"
+  - name: "🇦🇺 hamedp71-6"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "103.62.50.132"
@@ -368,9 +365,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇧🇦 Bosnia-WG"
+  - name: "🇧🇦 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.99.3.25"
@@ -395,9 +392,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇨🇦 Canada-WG-1"
+  - name: "🇨🇦 hamedp71-1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "23.191.80.4"
@@ -422,9 +419,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇨🇦 Canada-WG-2"
+  - name: "🇨🇦 hamedp71-2"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "198.8.92.100"
@@ -449,9 +446,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇨🇦 Canada-WG-3"
+  - name: "🇨🇦 hamedp71-3"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "149.57.28.226"
@@ -476,9 +473,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇨🇦 Canada-WG-4"
+  - name: "🇨🇦 hamedp71-4"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "104.244.210.244"
@@ -503,9 +500,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇨🇭 Switzerland-WG-1"
+  - name: "🇨🇭 hamedp71-1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.156.175.180"
@@ -530,9 +527,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇨🇾 Cyprus-WG"
+  - name: "🇨🇾 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "46.199.75.107"
@@ -557,9 +554,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇨🇿 Czechia-WG"
+  - name: "🇨🇿 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.246.210.3"
@@ -584,9 +581,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇨🇿 Czechia-WG-1"
+  - name: "🇨🇿 hamedp71-1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.246.210.3"
@@ -611,9 +608,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇫🇷 France-WG"
+  - name: "🇫🇷 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "45.89.174.36"
@@ -638,9 +635,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇫🇷 France-WG-1"
+  - name: "🇫🇷 hamedp71-1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "45.89.174.36"
@@ -665,9 +662,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇬🇧 United Kingdom-WG"
+  - name: "🇬🇧 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "193.36.118.228"
@@ -692,9 +689,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇭🇰 Hong Kong-WG"
+  - name: "🇭🇰 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "84.17.57.115"
@@ -719,9 +716,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇮🇸 hamedp71-WG"
+  - name: "🇮🇸 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "37.156.216.148"
@@ -746,9 +743,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇮🇸 Iceland-WG"
+  - name: "🇮🇸 hamedp71-1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.165.170.3"
@@ -773,9 +770,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇮🇸 Iceland-WG-2"
+  - name: "🇮🇸 hamedp71-2"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.165.170.3"
@@ -800,9 +797,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇮🇪 Ireland-WG"
+  - name: "🇮🇪 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "23.92.127.36"
@@ -827,9 +824,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇰🇪 Kenya-WG"
+  - name: "🇰🇪 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "45.138.86.228"
@@ -854,9 +851,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇱🇹 Lithuania-WG"
+  - name: "🇱🇹 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "37.156.216.148"
@@ -881,9 +878,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇱🇺 Luxembourg-WG"
+  - name: "🇱🇺 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.221.132.228"
@@ -908,9 +905,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇲🇰 North Macedonia-WG"
+  - name: "🇲🇰 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.225.28.52"
@@ -935,9 +932,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇳🇱 Netherlands-WG-1"
+  - name: "🇳🇱 hamedp71-1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "89.238.150.230"
@@ -962,9 +959,9 @@ proxies:
       h3: 3
       h4: 4
       
-  - name: "🇳🇱 Netherlands-WG-2"
+  - name: "🇳🇱 hamedp71-2"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.253.96.4"
@@ -989,9 +986,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇳🇴 Norway-WG"
+  - name: "🇳🇴 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "37.120.203.68"
@@ -1016,9 +1013,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇳🇿 New Zealand-WG"
+  - name: "🇳🇿 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "103.108.94.164"
@@ -1043,9 +1040,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇵🇦 Panama-WG"
+  - name: "🇵🇦 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "138.186.142.204"
@@ -1070,9 +1067,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇷🇺 Russia-WG"
+  - name: "🇷🇺 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "188.124.42.116"
@@ -1097,9 +1094,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇷🇺 Russia-WG-1"
+  - name: "🇷🇺 hamedp71-1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "188.124.42.116"
@@ -1124,9 +1121,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇷🇺 Russia-WG-2"
+  - name: "🇷🇺 hamedp71-2"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "94.242.50.185"
@@ -1151,9 +1148,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇸🇪 Sweden-WG"
+  - name: "🇸🇪 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "79.142.76.199"
@@ -1178,9 +1175,9 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇹🇼 Taiwan"
+  - name: "🇹🇼 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 185.189.163.176
@@ -1205,9 +1202,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇸🇬 Singapore"
+  - name: "🇸🇬 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 156.146.56.112
@@ -1232,9 +1229,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇸🇬 Singapore 1"
+  - name: "🇸🇬 hamedp71 1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 103.107.198.228
@@ -1259,9 +1256,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 United States 2"
+  - name: "🇺🇸 hamedp71 2"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 167.88.60.244
@@ -1286,9 +1283,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 United States 3"
+  - name: "🇺🇸 hamedp71 3"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 23.94.74.100
@@ -1313,9 +1310,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 United States 4"
+  - name: "🇺🇸 hamedp71 4"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 104.255.169.111
@@ -1340,9 +1337,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 United States 5"
+  - name: "🇺🇸 hamedp71 5"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 199.217.104.228
@@ -1367,9 +1364,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 United States 6"
+  - name: "🇺🇸 hamedp71 6"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 198.12.64.36
@@ -1394,9 +1391,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 United States 7"
+  - name: "🇺🇸 hamedp71 7"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 23.95.42.212
@@ -1421,9 +1418,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 United States 8"
+  - name: "🇺🇸 hamedp71 8"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 217.138.217.212
@@ -1448,9 +1445,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 United States 9"
+  - name: "🇺🇸 hamedp71 9"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 194.5.215.196
@@ -1475,9 +1472,9 @@ proxies:
       h4: 3
       h3: 4   
 
-  - name: "🇺🇸 United States"
+  - name: "🇺🇸 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 198.147.22.227
@@ -1502,9 +1499,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇻🇳 Vietnam"
+  - name: "🇻🇳 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 103.9.79.220
@@ -1529,9 +1526,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇿🇦 South Africa 1"
+  - name: "🇿🇦 hamedp71 1"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 165.73.248.92
@@ -1556,9 +1553,9 @@ proxies:
       h4: 3
       h3: 4
 
-  - name: "🇿🇦 South Africa"
+  - name: "🇿🇦 hamedp71"
     type: wireguard
-    ip: "100.80.234.177/32"
+    ip: "100.80.24.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: 197.242.159.229
@@ -1593,7 +1590,7 @@ proxy-groups:
     proxies: 
       - "🤍 وارپ"
       - "🔁 (اتصال پایدار)"
-      - "🇩🇪 anytls-443" # توجه: این کانفیگ در لیست شما نبود، اگر وجود ندارد آن را از اینجا هم حذف کنید
+      - "🇩🇪 anytls-443"
       - DIRECT
     
   - name: "🤍 وارپ"
@@ -1602,123 +1599,122 @@ proxy-groups:
     interval: 120
     tolerance: 50
     proxies:
-      - "🇩🇪 hamedp71-WG"
-      - "🇩🇪 hamedp71-WG 2"
-      - "🇦🇹 Austria-WG"
-      - "🇦🇺 Australia-WG-1"
-      - "🇦🇺 Australia-WG-2"
-      - "🇦🇺 Australia-WG-3"
-      - "🇦🇺 Australia-WG-4"
-      - "🇦🇺 Australia-WG-5"
-      - "🇦🇺 Australia-WG"
-      - "🇦🇺 Australia-WG-6"
-      - "🇧🇦 Bosnia-WG"
-      - "🇨🇦 Canada-WG-1"
-      - "🇨🇦 Canada-WG-2"
-      - "🇨🇦 Canada-WG-3"
-      - "🇨🇦 Canada-WG-4"
-      - "🇨🇭 Switzerland-WG-1"
-      - "🇨🇾 Cyprus-WG"
-      - "🇨🇿 Czechia-WG"
-      - "🇨🇿 Czechia-WG-1"
-      - "🇫🇷 France-WG"
-      - "🇫🇷 France-WG-1"
-      - "🇬🇧 United Kingdom-WG"
-      - "🇭🇰 Hong Kong-WG"
-      - "🇮🇸 hamedp71-WG"
-      - "🇮🇸 Iceland-WG"
-      - "🇮🇸 Iceland-WG-2"
-      - "🇮🇪 Ireland-WG"
-      - "🇰🇪 Kenya-WG"
-      - "🇱🇹 Lithuania-WG"
-      - "🇱🇺 Luxembourg-WG"
-      - "🇲🇰 North Macedonia-WG"
-      - "🇳🇱 Netherlands-WG-1"
-      - "🇳🇱 Netherlands-WG-2"
-      - "🇳🇴 Norway-WG"
-      - "🇳🇿 New Zealand-WG"
-      - "🇵🇦 Panama-WG"
-      - "🇷🇺 Russia-WG"
-      - "🇷🇺 Russia-WG-1"
-      - "🇷🇺 Russia-WG-2"
-      - "🇸🇪 Sweden-WG"
-      - "🇹🇼 Taiwan"
-      - "🇸🇬 Singapore"
-      - "🇸🇬 Singapore 1"
-      - "🇺🇸 United States 2"
-      - "🇺🇸 United States 3"
-      - "🇺🇸 United States 4"
-      - "🇺🇸 United States 5"
-      - "🇺🇸 United States 6"
-      - "🇺🇸 United States 7"
-      - "🇺🇸 United States 8"
-      - "🇺🇸 United States 9"
-      - "🇺🇸 United States"
-      - "🇻🇳 Vietnam"
-      - "🇿🇦 South Africa 1"
-      - "🇿🇦 South Africa"
+      - "🇩🇪 hamedp71"
+      - "🇩🇪 hamedp71 2"
+      - "🇦🇹 hamedp71"
+      - "🇦🇺 hamedp71-1"
+      - "🇦🇺 hamedp71-2"
+      - "🇦🇺 hamedp71-3"
+      - "🇦🇺 hamedp71-4"
+      - "🇦🇺 hamedp71-5"
+      - "🇦🇺 hamedp71"
+      - "🇦🇺 hamedp71-6"
+      - "🇧🇦 hamedp71"
+      - "🇨🇦 hamedp71-1"
+      - "🇨🇦 hamedp71-2"
+      - "🇨🇦 hamedp71-3"
+      - "🇨🇦 hamedp71-4"
+      - "🇨🇭 hamedp71-1"
+      - "🇨🇾 hamedp71"
+      - "🇨🇿 hamedp71"
+      - "🇨🇿 hamedp71-1"
+      - "🇫🇷 hamedp71"
+      - "🇫🇷 hamedp71-1"
+      - "🇬🇧 hamedp71"
+      - "🇭🇰 hamedp71"
+      - "🇮🇸 hamedp71"
+      - "🇮🇸 hamedp71-1"
+      - "🇮🇸 hamedp71-2"
+      - "🇮🇪 hamedp71"
+      - "🇰🇪 hamedp71"
+      - "🇱🇹 hamedp71"
+      - "🇱🇺 hamedp71"
+      - "🇲🇰 hamedp71"
+      - "🇳🇱 hamedp71-1"
+      - "🇳🇱 hamedp71-2"
+      - "🇳🇴 hamedp71"
+      - "🇳🇿 hamedp71"
+      - "🇵🇦 hamedp71"
+      - "🇷🇺 hamedp71"
+      - "🇷🇺 hamedp71-1"
+      - "🇷🇺 hamedp71-2"
+      - "🇸🇪 hamedp71"
+      - "🇹🇼 hamedp71"
+      - "🇸🇬 hamedp71"
+      - "🇸🇬 hamedp71 1"
+      - "🇺🇸 hamedp71 2"
+      - "🇺🇸 hamedp71 3"
+      - "🇺🇸 hamedp71 4"
+      - "🇺🇸 hamedp71 5"
+      - "🇺🇸 hamedp71 6"
+      - "🇺🇸 hamedp71 7"
+      - "🇺🇸 hamedp71 8"
+      - "🇺🇸 hamedp71 9"
+      - "🇺🇸 hamedp71"
+      - "🇻🇳 hamedp71"
+      - "🇿🇦 hamedp71 1"
+      - "🇿🇦 hamedp71"
 
   - name: "🔁 (اتصال پایدار)"
     type: fallback
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇩🇪 hamedp71-WG"
-      - "🇩🇪 hamedp71-WG 2"
-      - "🇦🇹 Austria-WG"
-      - "🇦🇺 Australia-WG-1"
-      - "🇦🇺 Australia-WG-2"
-      - "🇦🇺 Australia-WG-3"
-      - "🇦🇺 Australia-WG-4"
-      - "🇦🇺 Australia-WG-5"
-      - "🇦🇺 Australia-WG"
-      - "🇦🇺 Australia-WG-6"
-      - "🇧🇦 Bosnia-WG"
-      - "🇨🇦 Canada-WG-1"
-      - "🇨🇦 Canada-WG-2"
-      - "🇨🇦 Canada-WG-3"
-      - "🇨🇦 Canada-WG-4"
-      - "🇨🇭 Switzerland-WG-1"
-      - "🇨🇾 Cyprus-WG"
-      - "🇨🇿 Czechia-WG"
-      - "🇨🇿 Czechia-WG-1"
-      - "🇫🇷 France-WG"
-      - "🇫🇷 France-WG-1"
-      - "🇬🇧 United Kingdom-WG"
-      - "🇭🇰 Hong Kong-WG"
-      - "🇮🇸 hamedp71-WG"
-      - "🇮🇸 Iceland-WG"
-      - "🇮🇸 Iceland-WG-1"
-      - "🇮🇸 Iceland-WG-2"
-      - "🇮🇪 Ireland-WG"
-      - "🇰🇪 Kenya-WG"
-      - "🇱🇹 Lithuania-WG"
-      - "🇱🇺 Luxembourg-WG"
-      - "🇲🇰 North Macedonia-WG"
-      - "🇳🇱 Netherlands-WG-1"
-      - "🇳🇱 Netherlands-WG-2"
-      - "🇳🇴 Norway-WG"
-      - "🇳🇿 New Zealand-WG"
-      - "🇵🇦 Panama-WG"
-      - "🇷🇺 Russia-WG"
-      - "🇷🇺 Russia-WG-1"
-      - "🇷🇺 Russia-WG-2"
-      - "🇸🇪 Sweden-WG"
-      - "🇹🇼 Taiwan"
-      - "🇸🇬 Singapore"
-      - "🇸🇬 Singapore 1"
-      - "🇺🇸 United States 2"
-      - "🇺🇸 United States 3"
-      - "🇺🇸 United States 4"
-      - "🇺🇸 United States 5"
-      - "🇺🇸 United States 6"
-      - "🇺🇸 United States 7"
-      - "🇺🇸 United States 8"
-      - "🇺🇸 United States 9"
-      - "🇺🇸 United States"
-      - "🇻🇳 Vietnam"
-      - "🇿🇦 South Africa 1"
-      - "🇿🇦 South Africa"
+      - "🇩🇪 hamedp71"
+      - "🇩🇪 hamedp71 2"
+      - "🇦🇹 hamedp71"
+      - "🇦🇺 hamedp71-1"
+      - "🇦🇺 hamedp71-2"
+      - "🇦🇺 hamedp71-3"
+      - "🇦🇺 hamedp71-4"
+      - "🇦🇺 hamedp71-5"
+      - "🇦🇺 hamedp71"
+      - "🇦🇺 hamedp71-6"
+      - "🇧🇦 hamedp71"
+      - "🇨🇦 hamedp71-1"
+      - "🇨🇦 hamedp71-2"
+      - "🇨🇦 hamedp71-3"
+      - "🇨🇦 hamedp71-4"
+      - "🇨🇭 hamedp71-1"
+      - "🇨🇾 hamedp71"
+      - "🇨🇿 hamedp71"
+      - "🇨🇿 hamedp71-1"
+      - "🇫🇷 hamedp71"
+      - "🇫🇷 hamedp71-1"
+      - "🇬🇧 hamedp71"
+      - "🇭🇰 hamedp71"
+      - "🇮🇸 hamedp71"
+      - "🇮🇸 hamedp71-1"
+      - "🇮🇸 hamedp71-2"
+      - "🇮🇪 hamedp71"
+      - "🇰🇪 hamedp71"
+      - "🇱🇹 hamedp71"
+      - "🇱🇺 hamedp71"
+      - "🇲🇰 hamedp71"
+      - "🇳🇱 hamedp71-1"
+      - "🇳🇱 hamedp71-2"
+      - "🇳🇴 hamedp71"
+      - "🇳🇿 hamedp71"
+      - "🇵🇦 hamedp71"
+      - "🇷🇺 hamedp71"
+      - "🇷🇺 hamedp71-1"
+      - "🇷🇺 hamedp71-2"
+      - "🇸🇪 hamedp71"
+      - "🇹🇼 hamedp71"
+      - "🇸🇬 hamedp71"
+      - "🇸🇬 hamedp71 1"
+      - "🇺🇸 hamedp71 2"
+      - "🇺🇸 hamedp71 3"
+      - "🇺🇸 hamedp71 4"
+      - "🇺🇸 hamedp71 5"
+      - "🇺🇸 hamedp71 6"
+      - "🇺🇸 hamedp71 7"
+      - "🇺🇸 hamedp71 8"
+      - "🇺🇸 hamedp71 9"
+      - "🇺🇸 hamedp71"
+      - "🇻🇳 hamedp71"
+      - "🇿🇦 hamedp71 1"
+      - "🇿🇦 hamedp71"
       
 rule-providers:
   ir:
