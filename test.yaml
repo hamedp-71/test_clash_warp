@@ -41,18 +41,18 @@ dns:
     - '10.202.10.11'   # رادار
 
   nameserver-policy:
-    'domain:+.ir': '[proxy-server-nameserver]'
-    'all': '[nameserver]'
+    'domain:+.ir': [proxy-server-nameserver]
+    'all': [nameserver]
 
   fallback-filter:
   geoip: true
   geoip-code: IR
   ipcidr:
-    - '240.0.0.0/4'
+    - 240.0.0.0/4
   geosite:
-    - 'cn'
+    - cn
   domain:
-    - '+.ir'
+    - +.ir
 
 tun:
   enable: true
@@ -89,7 +89,7 @@ proxies:
 
   - name: "🇩🇪 hamedp71"
     type: wireguard
-    ip: "100.80.24.177/32"
+    ip: "100.80.234.177/32"
     ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "94.242.50.185"
@@ -115,7 +115,7 @@ proxies:
 
   - name: "🇩🇪 hamedp71 2"
     type: wireguard
-    ip: "100.80.24.177/32"
+    ip: "100.80.234.177/32"
     ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.189.163.176"
