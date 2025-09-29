@@ -95,10 +95,20 @@ proxies:
     sni: "suiany.makingirangreatagain.com"
     servername: "suiany.makingirangreatagain.com"
 
+proxies:
+  - name: "🇩🇪 anytls-443"
+    type: anytls
+    server: 80.240.26.147
+    port: 443
+    password: "qzJvszJHOB"
+    tls: true
+    sni: "suiany.makingirangreatagain.com"
+    servername: "suiany.makingirangreatagain.com"
+
   - name: "🇩🇪 hamedp71"
     type: wireguard
     ip: "100.80.24.177/32"
-    ipv6: "2001:db8:1::1/128"
+    ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "94.242.50.185"
     port: 443
@@ -111,7 +121,7 @@ proxies:
     mtu: 1280
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
+      jc: 4
       jmin: 40
       jmax: 75
       s1: 0
@@ -124,7 +134,7 @@ proxies:
   - name: "🇩🇪 hamedp71 2"
     type: wireguard
     ip: "100.80.24.177/32"
-    ipv6: "2001:db8:1::1/128"
+    ipv6: ""
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.189.163.176"
     port: 443
@@ -137,7 +147,7 @@ proxies:
     mtu: 1280
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
+      jc: 4
       jmin: 40
       jmax: 75
       s1: 0
@@ -163,7 +173,7 @@ proxies:
     dns: ["10.255.255.2", "8.8.8.8"]
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
+      jc: 4
       jmin: 40
       jmax: 75
       s1: 0
@@ -189,7 +199,7 @@ proxies:
     dns: ["10.255.255.2", "8.8.8.8"]
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
+      jc: 4
       jmin: 40
       jmax: 75
       s1: 0
@@ -215,7 +225,7 @@ proxies:
     dns: ["10.255.255.2", "8.8.8.8"]
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
+      jc: 4
       jmin: 40
       jmax: 75
       s1: 0
@@ -241,7 +251,7 @@ proxies:
     dns: ["10.255.255.2", "8.8.8.8"]
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
+      jc: 4
       jmin: 40
       jmax: 75
       s1: 0
@@ -267,7 +277,7 @@ proxies:
     dns: ["10.255.255.2", "8.8.8.8"]
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
+      jc: 4
       jmin: 40
       jmax: 75
       s1: 0
@@ -291,10 +301,9 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
+      jc: 4
       jmin: 40
       jmax: 75
       s1: 0
@@ -318,10 +327,9 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
+      jc: 4
       jmin: 40
       jmax: 75
       s1: 0
@@ -345,12 +353,11 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 4
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -372,12 +379,11 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 4
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -399,12 +405,11 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 4
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -426,14 +431,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -453,14 +457,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -480,14 +483,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -507,14 +509,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -534,14 +535,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -561,14 +561,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -588,14 +587,13 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -615,14 +613,13 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -642,14 +639,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -669,14 +665,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -696,14 +691,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -723,14 +717,13 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -750,14 +743,13 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -777,14 +769,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -804,14 +795,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -831,14 +821,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -858,14 +847,13 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -885,14 +873,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -912,14 +899,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -939,14 +925,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -966,14 +951,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -993,14 +977,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -1020,14 +1003,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -1047,14 +1029,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -1074,14 +1055,13 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -1101,14 +1081,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -1128,14 +1107,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -1155,14 +1133,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -1182,14 +1159,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1209,14 +1185,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1236,14 +1211,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1263,14 +1237,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1290,14 +1263,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1317,14 +1289,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1344,14 +1315,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1371,14 +1341,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1398,14 +1367,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1425,14 +1393,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1452,14 +1419,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1479,14 +1445,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1506,14 +1471,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1533,14 +1497,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
@@ -1560,14 +1523,13 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
-    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 4
+      jmin: 40
+      jmax: 75
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h4: 3
