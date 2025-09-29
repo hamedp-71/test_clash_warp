@@ -55,15 +55,6 @@ dns:
     
   # فیلتر برای تعیین اینکه چه دامنه‌هایی از سرورهای Fallback استفاده کنند
   # در اینجا، دامنه‌های ایرانی از سرورهای اصلی (بین‌المللی) پرسیده نمی‌شوند تا سرعت بالاتر رود
-  fallback-filter:
-    geoip: true
-    geoip-code: IR
-    ipcidr:
-      - 240.0.0.0/4 # رزرو شده برای استفاده‌های خاص
-    geosite:
-      - cn
-    domain:
-      - +.ir
 tun:
   enable: true
   stack: gvisor
