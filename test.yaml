@@ -104,11 +104,11 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
-      jmin: 40
-      jmax: 75
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
@@ -131,11 +131,11 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 5
-      jmin: 40
-      jmax: 75
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
@@ -158,11 +158,11 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 75
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
