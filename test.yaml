@@ -1710,6 +1710,6 @@ rules:
 
 ntp:
   enable: true
-  server: ir.pool.ntp.org
+  server: pool.ntp.org
   port: 123
   interval: 30
