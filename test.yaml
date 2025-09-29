@@ -112,9 +112,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 5
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -139,9 +139,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 5
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -166,9 +166,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 5
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -193,9 +193,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 5
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -220,9 +220,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 5
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -247,9 +247,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 5
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -274,9 +274,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 5
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -301,9 +301,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 5
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
@@ -328,9 +328,9 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
+      jc: 5
+      jmin: 40
+      jmax: 75
       s1: 0
       s2: 0
       h1: 1
