@@ -3,15 +3,19 @@ ipv6: true
 allow-lan: true
 mode: rule
 log-level: info
+keepalive: 25
 keep-alive-idle: 30
 keep-alive-interval: 30
 unified-delay: false
 geo-auto-update: true
 geo-update-interval: 168
 external-controller: '127.0.0.1:9090'
+# یک رمز عبور قوی برای امنیت بیشتر اینجا قرار دهید
 secret: 'Hpp@19921992'
 external-ui: ui
-external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
+# این یک داشبورد جایگزین و محبوب به نام Yacd است که می‌توانید امتحان کنید
+external-ui-url: 'https://github.com/haishanh/yacd/archive/gh-pages.zip'
+# external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 external-controller-cors:
   allow-origins: ['*']
   allow-private-network: true
@@ -29,16 +33,16 @@ dns:
   
   # سرورهای DNS اصلی برای ترجمه دامنه‌های بین‌المللی (امن و رمزنگاری شده)
   nameserver:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-    - https://dns.quad9.net/dns-query
+    - 'https://1.1.1.1/dns-query'
+    - 'https://8.8.8.8/dns-query'
+    - 'https://dns.quad9.net/dns-query'
 
   # سرورهای DNS برای ترجمه آدرس سرورهای پروکسی و دامنه‌های داخلی (سریع و ایرانی)
   proxy-server-nameserver:
-    - 178.22.122.100 # شکن
-    - 185.51.200.2   # شکن
-    - 10.202.10.10   # رادار
-    - 10.202.10.11   # رادار
+    - '178.22.122.100' # شکن
+    - '185.51.200.2'   # شکن
+    - '10.202.10.10'   # رادار
+    - '10.202.10.11'   # رادار
 
   # سیاست‌گذاری DNS: تعیین اینکه برای چه دامنه‌هایی از کدام سرور DNS استفاده شود
   nameserver-policy:
@@ -58,6 +62,7 @@ dns:
     - cn
   domain:
     - +.ir
+
 tun:
   enable: true
   stack: gvisor
@@ -1656,9 +1661,75 @@ proxy-groups:
       - "🇻🇳 hamedp71"
       - "🇿🇦 hamedp71 1"
       - "🇿🇦 hamedp71"
-      
+
+rule-providers:
+  malware:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt"
+    path: "./ruleset/malware.txt"
+    interval: 86400
+  malware-cidr:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware-ip.txt"
+    path: "./ruleset/malware-cidr.txt"
+    interval: 86400
+  phishing:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt"
+    path: "./ruleset/phishing.txt"
+    interval: 86400
+  phishing-cidr:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing-ip.txt"
+    path: "./ruleset/phishing-cidr.txt"
+    interval: 86400
+  cryptominers:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt"
+    path: "./ruleset/cryptominers.txt"
+    interval: 86400
+  category-ads-all:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/category-ads-all.txt"
+    path: "./ruleset/category-ads-all.txt"
+    interval: 86400
+  ir:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt"
+    path: "./ruleset/ir.txt"
+    interval: 86400
+  ir-cidr:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt"
+    path: "./ruleset/ir-cidr.txt"
+    interval: 86400
+
 rules:
+  - RULE-SET,malware,REJECT
+  - RULE-SET,phishing,REJECT
+  - RULE-SET,cryptominers,REJECT
+  - RULE-SET,category-ads-all,REJECT
+  - RULE-SET,malware-cidr,REJECT
+  - RULE-SET,phishing-cidr,REJECT
   - GEOIP,IR,DIRECT
+  - RULE-SET,ir,DIRECT
+  - RULE-SET,ir-cidr,DIRECT
   - MATCH,💚خانه
 
 ntp:
