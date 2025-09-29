@@ -90,7 +90,7 @@ proxies:
   - name: "🇩🇪 hamedp71"
     type: wireguard
     ip: "100.80.234.177/32"
-    ipv6: ""
+    ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "94.242.50.185"
     port: 443
@@ -104,11 +104,11 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 5
+      jmin: 20
+      jmax: 50
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -117,7 +117,7 @@ proxies:
   - name: "🇩🇪 hamedp71 2"
     type: wireguard
     ip: "100.80.234.177/32"
-    ipv6: ""
+    ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
     server: "185.189.163.176"
     port: 443
@@ -131,11 +131,11 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 5
+      jmin: 20
+      jmax: 50
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
@@ -158,11 +158,11 @@ proxies:
     persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 3
-      jmin: 50
-      jmax: 150
-      s1: 1
-      s2: 2
+      jc: 5
+      jmin: 20
+      jmax: 50
+      s1: 0
+      s2: 0
       h1: 1
       h2: 2
       h3: 3
