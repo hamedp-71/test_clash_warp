@@ -3,18 +3,14 @@ ipv6: true
 allow-lan: true
 mode: rule
 log-level: info
-keepalive: 25
-disable-keep-alive: true
 keep-alive-idle: 30
 keep-alive-interval: 30
 unified-delay: false
 geo-auto-update: true
 geo-update-interval: 168
 external-controller: '127.0.0.1:9090'
-# یک رمز عبور قوی برای امنیت بیشتر اینجا قرار دهید
 secret: 'Hpp@19921992'
 external-ui: ui
-# external-ui-url: 'https://github.com/haishanh/yacd/archive/gh-pages.zip'
 external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 external-controller-cors:
   allow-origins: ['*']
