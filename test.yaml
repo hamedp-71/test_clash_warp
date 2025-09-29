@@ -14,8 +14,8 @@ external-controller: '127.0.0.1:9090'
 secret: 'Hpp@19921992'
 external-ui: ui
 # این یک داشبورد جایگزین و محبوب به نام Yacd است که می‌توانید امتحان کنید
-external-ui-url: 'https://github.com/haishanh/yacd/archive/gh-pages.zip'
-# external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
+# external-ui-url: 'https://github.com/haishanh/yacd/archive/gh-pages.zip'
+external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 external-controller-cors:
   allow-origins: ['*']
   allow-private-network: true
