@@ -748,14 +748,14 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇮🇸 Iceland-WG-1"
+  - name: "🇮🇸 Iceland-WG-2"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "23.92.127.36"
+    server: "185.165.170.3"
     port: 65142
-    public-key: "VgzE+XeQUxX54wMZdhRBU4Qxqba95iVpXi197ZbBBgA="
+    public-key: "ua7TUXkcSiiHeTyCok5b3PX9DkJ4l5yVvGlSmJ34WU8="
     pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
     reserved: "AAAA"
@@ -774,14 +774,14 @@ proxies:
       h3: 3
       h4: 4
 
-  - name: "🇮🇸 Iceland-WG-2"
+  - name: "🇮🇪 Ireland-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
     private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "185.165.170.3"
+    server: "23.92.127.36"
     port: 65142
-    public-key: "ua7TUXkcSiiHeTyCok5b3PX9DkJ4l5yVvGlSmJ34WU8="
+    public-key: "VgzE+XeQUxX54wMZdhRBU4Qxqba95iVpXi197ZbBBgA="
     pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8"]
     reserved: "AAAA"
@@ -1572,8 +1572,8 @@ proxy-groups:
       - "🇭🇰 Hong Kong-WG"
       - "🇮🇸 hamedp71-WG"
       - "🇮🇸 Iceland-WG"
-      - "🇮🇸 Iceland-WG-1"
       - "🇮🇸 Iceland-WG-2"
+      - "🇮🇪 Ireland-WG"
       - "🇰🇪 Kenya-WG"
       - "🇱🇹 Lithuania-WG"
       - "🇱🇺 Luxembourg-WG"
@@ -1634,8 +1634,8 @@ proxy-groups:
       - "🇭🇰 Hong Kong-WG"
       - "🇮🇸 hamedp71-WG"
       - "🇮🇸 Iceland-WG"
-      - "🇮🇸 Iceland-WG-1"
       - "🇮🇸 Iceland-WG-2"
+      - "🇮🇪 Ireland-WG"
       - "🇰🇪 Kenya-WG"
       - "🇱🇹 Lithuania-WG"
       - "🇱🇺 Luxembourg-WG"
