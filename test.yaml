@@ -111,13 +111,14 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
@@ -137,19 +138,20 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇦🇹 hamedp71-WG"
+  - name: "🇦🇹 Austria-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -163,19 +165,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇦🇺 hamedp71-WG-1"
+  - name: "🇦🇺 Australia-WG-1"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -189,19 +192,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇦🇺 hamedp71-WG-2"
+  - name: "🇦🇺 Australia-WG-2"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -215,19 +219,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇦🇺 hamedp71-WG-3"
+  - name: "🇦🇺 Australia-WG-3"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -241,20 +246,21 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
 
-  - name: "🇦🇺 hamedp71-WG-4"
+  - name: "🇦🇺 Australia-WG-4"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -268,19 +274,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇦🇺 hamedp71-WG-5"
+  - name: "🇦🇺 Australia-WG-5"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -294,19 +301,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇦🇺 hamedp71-WG"
+  - name: "🇦🇺 Australia-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -320,19 +328,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇦🇺 hamedp71-WG-6"
+  - name: "🇦🇺 Australia-WG-6"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -346,19 +355,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇧🇦 hamedp71-WG"
+  - name: "🇧🇦 Bosnia-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -372,19 +382,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇨🇦 hamedp71-WG-1"
+  - name: "🇨🇦 Canada-WG-1"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -398,19 +409,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇨🇦 hamedp71-WG-2"
+  - name: "🇨🇦 Canada-WG-2"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -424,19 +436,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇨🇦 hamedp71-WG-3"
+  - name: "🇨🇦 Canada-WG-3"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -450,19 +463,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇨🇦 hamedp71-WG-4"
+  - name: "🇨🇦 Canada-WG-4"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -476,19 +490,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇨🇭 hamedp71-WG-1"
+  - name: "🇨🇭 Switzerland-WG-1"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -502,19 +517,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇨🇾 hamedp71-WG"
+  - name: "🇨🇾 Cyprus-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -528,19 +544,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇨🇿 hamedp71-WG"
+  - name: "🇨🇿 Czechia-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -554,19 +571,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇨🇿 hamedp71-WG-1"
+  - name: "🇨🇿 Czechia-WG-1"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: ""
@@ -580,19 +598,20 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇫🇷 hamedp71-WG"
+  - name: "🇫🇷 France-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -606,19 +625,20 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇫🇷 hamedp71-WG-1"
+  - name: "🇫🇷 France-WG-1"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -632,19 +652,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇬🇧 hamedp71-WG"
+  - name: "🇬🇧 United Kingdom-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -658,19 +679,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇭🇰 hamedp71-WG"
+  - name: "🇭🇰 Hong Kong-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -684,13 +706,14 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
@@ -710,19 +733,20 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇮🇸 hamedp71-WG-1"
+  - name: "🇮🇸 Iceland-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: ""
@@ -736,19 +760,20 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇮🇸 hamedp71-WG-2"
+  - name: "🇮🇸 Iceland-WG-2"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -762,19 +787,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇮🇪 hamedp71-WG"
+  - name: "🇮🇪 Ireland-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -788,19 +814,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇰🇪 hamedp71-WG"
+  - name: "🇰🇪 Kenya-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -814,19 +841,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇱🇹 hamedp71-WG"
+  - name: "🇱🇹 Lithuania-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: ""
@@ -840,19 +868,20 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇱🇺 hamedp71-WG"
+  - name: "🇱🇺 Luxembourg-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -866,19 +895,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇲🇰 hamedp71-WG"
+  - name: "🇲🇰 North Macedonia-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -892,19 +922,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇳🇱 hamedp71-WG-1"
+  - name: "🇳🇱 Netherlands-WG-1"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -918,19 +949,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
       
-  - name: "🇳🇱 hamedp71-WG-2"
+  - name: "🇳🇱 Netherlands-WG-2"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -944,19 +976,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇳🇴 hamedp71-WG"
+  - name: "🇳🇴 Norway-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -970,19 +1003,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇳🇿 hamedp71-WG"
+  - name: "🇳🇿 New Zealand-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -996,19 +1030,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇵🇦 hamedp71-WG"
+  - name: "🇵🇦 Panama-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1022,19 +1057,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇷🇺 hamedp71-WG"
+  - name: "🇷🇺 Russia-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: ""
@@ -1048,19 +1084,20 @@ proxies:
     reserved: "AAAA"
     udp: true
     mtu: 1280
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇷🇺 hamedp71-WG-1"
+  - name: "🇷🇺 Russia-WG-1"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1074,19 +1111,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇷🇺 hamedp71-WG-2"
+  - name: "🇷🇺 Russia-WG-2"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1100,19 +1138,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇸🇪 hamedp71-WG"
+  - name: "🇸🇪 Sweden-WG"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1126,19 +1165,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h3: 3
       h4: 4
 
-  - name: "🇹🇼 hamedp71"
+  - name: "🇹🇼 Taiwan"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1152,19 +1192,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇸🇬 hamedp71"
+  - name: "🇸🇬 Singapore"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1178,19 +1219,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇸🇬 hamedp71 1"
+  - name: "🇸🇬 Singapore 1"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1204,19 +1246,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 hamedp71 2"
+  - name: "🇺🇸 United States 2"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1230,19 +1273,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 hamedp71 3"
+  - name: "🇺🇸 United States 3"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1256,19 +1300,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 hamedp71 4"
+  - name: "🇺🇸 United States 4"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1282,19 +1327,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 hamedp71 5"
+  - name: "🇺🇸 United States 5"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1308,19 +1354,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 hamedp71 6"
+  - name: "🇺🇸 United States 6"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1334,19 +1381,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 hamedp71 7"
+  - name: "🇺🇸 United States 7"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1360,19 +1408,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 hamedp71 8"
+  - name: "🇺🇸 United States 8"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1386,19 +1435,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇺🇸 hamedp71 9"
+  - name: "🇺🇸 United States 9"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1412,19 +1462,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4   
 
-  - name: "🇺🇸 hamedp71"
+  - name: "🇺🇸 United States"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1438,19 +1489,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇻🇳 hamedp71"
+  - name: "🇻🇳 Vietnam"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1464,19 +1516,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇿🇦 hamedp71 1"
+  - name: "🇿🇦 South Africa 1"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1490,19 +1543,20 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
       h3: 4
 
-  - name: "🇿🇦 hamedp71"
+  - name: "🇿🇦 South Africa"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: "2001:db8:1::1/128"
@@ -1516,13 +1570,14 @@ proxies:
     udp: true
     mtu: 1280
     dns: ["10.255.255.2", "8.8.8.8"]
+    persistent-keepalive: 25
     dialer-proxy: ""
     amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
+      jc: 3
+      jmin: 50
+      jmax: 150
+      s1: 1
+      s2: 2
       h1: 1
       h2: 2
       h4: 3
