@@ -1660,6 +1660,8 @@ proxy-groups:
 
   - name: "انتخاب دستی"
     type: select
+    url: "http://www.gstatic.com/generate_204"
+    interval: 30
     proxies: 
       - "🇩🇪 hamedp71"
       - "🇩🇪 hamedp71 2"
